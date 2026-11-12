@@ -1,2 +1,1 @@
-# gorkha-origins
-Authentic Himalayan Products
+Gorkha Origins – Authentic Himalayan Products.
