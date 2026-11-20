@@ -12,8 +12,12 @@ PREVIEW LOCALLY:
 4. An internet connection is needed for Google Fonts and the sample Unsplash photos.
 
 BEFORE PUBLISHING:
-- Replace contact@gorkhaorigins.com if you use another email.
-- Add your real Instagram URL and business address.
+- Email: contact@gorkhaorigins.com
+- Phone: +91 90830 34515 / +91 62967 37457
+- Instagram: https://www.instagram.com/gorkhaorigins/
+- Facebook: https://www.facebook.com/profile.php?id=61596727823502
+- Address: Shelpu, Bara Sittong, Khasmahal, Kurseong, Darjeeling, West Bengal, Kurseong 734008
+- Google Maps location embed included.
 - Replace sample photography with your own product and producer photos.
 - Confirm the products and descriptions match what you actually sell.
 - The contact button currently opens the visitor's email app; there is no database or online order system.
