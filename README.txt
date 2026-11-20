@@ -12,7 +12,7 @@ PREVIEW LOCALLY:
 4. An internet connection is needed for Google Fonts and the sample Unsplash photos.
 
 BEFORE PUBLISHING:
-- Replace hello@gorkhaorigins.com if you use another email.
+- Replace contact@gorkhaorigins.com if you use another email.
 - Add your real Instagram URL and business address.
 - Replace sample photography with your own product and producer photos.
 - Confirm the products and descriptions match what you actually sell.
