@@ -85,3 +85,22 @@ if (heroSlides.length > 0) {
 
   startAutoplay();
 }
+
+// Copy UPI ID functionality
+const copyUpiBtn = document.getElementById("copyUpiBtn");
+if (copyUpiBtn) {
+  copyUpiBtn.addEventListener("click", () => {
+    navigator.clipboard.writeText("pawalbhujel321-1@okhdfcbank").then(() => {
+      copyUpiBtn.textContent = "Copied! ✓";
+      copyUpiBtn.style.background = "#c09a60";
+      copyUpiBtn.style.color = "#1e3025";
+      setTimeout(() => {
+        copyUpiBtn.textContent = "Copy UPI";
+        copyUpiBtn.style.background = "";
+        copyUpiBtn.style.color = "";
+      }, 2500);
+    }).catch(() => {
+      prompt("Copy UPI ID:", "pawalbhujel321-1@okhdfcbank");
+    });
+  });
+}
