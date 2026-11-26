@@ -104,3 +104,56 @@ if (copyUpiBtn) {
     });
   });
 }
+
+// Product Collection Lightbox Modal
+const productModal = document.getElementById("productModal");
+const modalImg = document.getElementById("modalImg");
+const modalTag = document.getElementById("modalTag");
+const modalTitle = document.getElementById("modalTitle");
+const modalDesc = document.getElementById("modalDesc");
+
+function openProductModal(imgSrc, tag, title, desc) {
+  if (!productModal) return;
+  if (modalImg) {
+    modalImg.src = imgSrc;
+    modalImg.alt = title || "Product preview";
+  }
+  if (modalTag) modalTag.textContent = tag || "GORKHA ORIGINS · AUTHENTIC PRODUCE";
+  if (modalTitle) modalTitle.innerHTML = title || "";
+  if (modalDesc) modalDesc.textContent = desc || "";
+  productModal.classList.add("open");
+  productModal.setAttribute("aria-hidden", "false");
+  document.body.style.overflow = "hidden";
+}
+
+function closeProductModal() {
+  if (!productModal) return;
+  productModal.classList.remove("open");
+  productModal.setAttribute("aria-hidden", "true");
+  document.body.style.overflow = "";
+}
+
+window.openProductModal = openProductModal;
+window.closeProductModal = closeProductModal;
+
+document.querySelectorAll(".collection-card").forEach(card => {
+  card.addEventListener("click", () => {
+    const img = card.getAttribute("data-img");
+    const tag = card.getAttribute("data-tag");
+    const title = card.getAttribute("data-title");
+    const desc = card.getAttribute("data-desc");
+    openProductModal(img, tag, title, desc);
+  });
+  card.addEventListener("keydown", (e) => {
+    if (e.key === "Enter" || e.key === " ") {
+      e.preventDefault();
+      card.click();
+    }
+  });
+});
+
+window.addEventListener("keydown", (e) => {
+  if (e.key === "Escape" && productModal && productModal.classList.contains("open")) {
+    closeProductModal();
+  }
+});
